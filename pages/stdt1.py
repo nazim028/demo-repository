@@ -1,1 +1,1 @@
-this is stdt 1
+a='this is stdt 1'
