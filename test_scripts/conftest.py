@@ -4,7 +4,7 @@ from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.chrome import ChromeDriverManager
 @pytest.fixture(scope='class',autouse=True)
-def tc_setup(browser):
+def tc_setup(browser,url):
     if browser=='chrome':
         driver=webdriver.Chrome(executable_path=ChromeDriverManager().install())
     elif browser=='firefox':

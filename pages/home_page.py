@@ -1,6 +1,9 @@
 from selenium.webdriver.common.by import By
-from POM.AdvancePom.pages.base_page import BasePage
-from POM.AdvancePom.pages.task_page import TaskPage
+# from POM.AdvancePom.pages.base_page import BasePage
+# from POM.AdvancePom.pages.task_page import TaskPage
+from demo_repository.pages.base_page import BasePage
+from demo_repository.pages.task_page import TaskPage
+
 
 class HomePage(BasePage):
     def __task_tab(self):return self.find_element(By.XPATH,"//*[@id='container_tasks']")

@@ -1,6 +1,8 @@
 from selenium.webdriver.common.by import By
 from time import sleep
-from POM.AdvancePom.pages.base_page import BasePage
+#from POM.AdvancePom.pages.base_page import BasePage
+from demo_repository.pages.base_page import BasePage
+
 
 class TaskPage(BasePage):
     __add_new_button = lambda self:self.find_element(By.XPATH,"//div[contains(@class,'title ellipsis')]")

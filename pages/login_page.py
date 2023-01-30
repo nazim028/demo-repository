@@ -1,6 +1,9 @@
 from selenium.webdriver.common.by import By
-from POM.AdvancePom.pages.base_page import BasePage
-from POM.AdvancePom.pages.home_page import HomePage
+# from POM.AdvancePom.pages.base_page import BasePage
+# from POM.AdvancePom.pages.home_page import HomePage
+from demo_repository.pages.base_page import BasePage
+from demo_repository.pages.home_page import HomePage
+
 
 class LoginPage(BasePage):
     __username=lambda self:self.find_element(By.ID,"username")

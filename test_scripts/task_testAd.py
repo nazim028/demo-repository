@@ -1,8 +1,13 @@
 import pytest
 
-from POM.AdvancePom.pages.login_page import LoginPage
-from POM.AdvancePom.test_scripts.base_test import BaseTest
-from POM.AdvancePom.utilities import testdata
+# from POM.AdvancePom.pages.login_page import LoginPage
+# from POM.AdvancePom.test_scripts.base_test import BaseTest
+# from POM.AdvancePom.utilities import testdata
+from demo_repository.pages.login_page import LoginPage
+from demo_repository.test_scripts.base_test import BaseTest
+from demo_repository.utilities import testdata
+
+
 class Test_popup:
     @pytest.mark.parametrize('user,passwd',testdata.read_data_from_excel('D:\\selenium_framework\\POM\\AdvancePom\\testdata\\demodata.xlsx','Sheet1'))
     #@pytest.mark.parametrize('user,passwd', [('admin', 'manager'), ('trainee', 'trainee')])
